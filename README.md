@@ -9,16 +9,16 @@ Implemented Diffie-Hellman key exchange from scratch and demonstrated secure com
 
 **CryptoAES.py** : It will take care of all the encryption/decryption of messages between clients. Here, I've used CBC(Cipher Block Chaining) mode to encrypt and decrypt. And as this CBC mode requires IV(Initialization Vector 128-bit), I defined it as constant. 
 
-**Required Library files**
-pycryptodome (For AES)
-tqdm  (For Showing Progress Bar)
-socket
-math
-threading
-random
-time
-hmac
-hashlib
+**Required Library files**<br />
+pycryptodome (For AES)<br />
+tqdm  (For Showing Progress Bar)<br />
+socket<br />
+math<br />
+threading<br />
+random<br />
+time<br />
+hmac<br />
+hashlib<br />
 
-**How to test**
+**How to test**<br />
 First run the _server_ then run two instances of _client_ representing two different users, then wait for key exchange. Once key got exchanged both the client can start chatting with each other.
