@@ -94,7 +94,7 @@ while(True):    # Waits for user messages
     if(t.is_alive()):
         try:
             message=input('')
-            if(message.lower()!=exit):
+            if(message.lower()!='exit'):
                 message=user+':'+message
                 cipher=CryptoAES.AES_encrypt(message,secret)
                 clientSocket.send(cipher)
