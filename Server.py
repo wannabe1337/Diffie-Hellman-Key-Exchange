@@ -110,6 +110,8 @@ def thread_client(clientSock):
                     client.close()  
                 return
         except:
+            # print encrypted msg at server side
+            print(data)
             # Send msg to all except the sender
             for client in clients :
                 if (client!=clientSock):
